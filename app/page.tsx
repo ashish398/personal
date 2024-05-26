@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col justify-between p-24 pt-12 font-mono text-sm">
+    <div className="flex min-h-screen flex-col justify-between p-8 md:p-24 pt-12 font-mono text-sm gap-4">
       <div>
         <p>
           hi, <span className="text-yellow-400">ashish</span> here!
@@ -44,7 +44,7 @@ export default function Home() {
         </div>
 
         <div>
-          <p>
+          <div>
             <a href="https://www.pokeconnect.com" className="underline">
               2. pokeconnect
             </a>{" "}
@@ -52,7 +52,7 @@ export default function Home() {
               solving for super expensive cab fare from blr airport by enabling
               people to find others traveling to/from airport
             </p>
-          </p>
+          </div>
         </div>
       </div>
 
