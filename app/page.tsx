@@ -7,8 +7,8 @@ export default function Home() {
         </p>
         <p>i graduate in 2021 from iit madras in biotechnology. </p>
         <p>
-          right now i am working as a frontend dev, but everyday learning more
-          about deep learning and comp neuro.
+          right now i am working as a frontend dev, but everyday i am learning
+          more about deep learning and comp neuro.
         </p>
       </div>
 
@@ -19,7 +19,7 @@ export default function Home() {
       </div>
       <div>
         <p className="underline">people i understand and follow</p>
-        <p>PG, Sama, Andrej, Zuck, Nikita </p>
+        <p>PG, Sama, Andrej, Zuck, Bill Gates, Nikita, Brian Chesky </p>
       </div>
 
       <div className="flex flex-col gap-2">
@@ -64,8 +64,7 @@ export default function Home() {
           <li>plastic eating enzymes</li>
           <li>direct pollution capture</li>
           <li>
-            autonomous cars - deliveries and cabs are equivalent to rag picking
-            (dangerous and stupid)
+            autonomous cars - deliveries and cabs are dangerous and stupid
           </li>
         </ul>
       </div>
