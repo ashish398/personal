@@ -5,21 +5,25 @@ export default function Home() {
         <p>
           hi, <span className="text-yellow-400">ashish</span> here!
         </p>
-        <p>i graduate in 2021 from iit madras in biotechnology. </p>
         <p>
-          right now i am working as a frontend dev, but everyday i am learning
-          more about deep learning and comp neuro.
+          i graduated in 2021 from iit madras with a major in biotechnology.{" "}
+        </p>
+        <p>
+          right now i am working as a frontend dev, and learning about deep
+          learning and biology.
         </p>
       </div>
 
       <div>
-        <p className="underline">people i aspire</p>
-        <p>dead - Leonardo Da Vincci</p>
-        <p>alive - Elon Musk</p>
-      </div>
-      <div>
-        <p className="underline">people i understand and follow</p>
-        <p>PG, Sama, Andrej, Zuck, Bill Gates, Nikita, Brian Chesky </p>
+        <p className="underline">my idols</p>
+        <p>
+          deceased - Leonardo Da Vincci, Albert Einstein, Richard Feymann,
+          Gregor Mendel
+        </p>
+        <p>
+          alive - Elon Musk, Paul Graham, Mark Zuckerberg, Sam Altman, Bill
+          Gates
+        </p>
       </div>
 
       <div className="flex flex-col gap-2">
@@ -27,25 +31,26 @@ export default function Home() {
 
         <div>
           <p>
-            <a href="https://www.curations.club" className="underline">
+            <a href="https://www.curations.club" className="underline italic">
               1. curations.club
             </a>{" "}
             <span>(currently building)</span>
           </p>
           <p>
             a web app to share what you have been reading, listening, etc in 1
-            place. something like what bill gates send every summer and winter.
+            place.(something like what bill gates send every summer and winter)
           </p>
           <p>
-            why? it reflects just too much of your personality and identity.
-            consumption is how we make friends, how we grow and there was
-            nothing along these lines so i thought i will build it.
+            why? the content you consume reflects just too much of your
+            personality and identity. consumption is how we make friends, how we
+            grow and there was nothing along these lines so i thought i will
+            build it.
           </p>
         </div>
 
         <div>
           <div>
-            <a href="https://www.pokeconnect.com" className="underline">
+            <a href="https://www.pokeconnect.com" className="underline italic">
               2. pokeconnect
             </a>{" "}
             <p>
@@ -58,14 +63,12 @@ export default function Home() {
 
       <div>
         <p className="underline">
-          some big things i am excited about and want to build
+          some big things i am excited about and want to work on
         </p>
         <ul className="list-disc pl-5">
           <li>plastic eating enzymes</li>
           <li>direct pollution capture</li>
-          <li>
-            autonomous cars - deliveries and cabs are dangerous and stupid
-          </li>
+          <li>autonomous cars</li>
         </ul>
       </div>
 
@@ -77,6 +80,20 @@ export default function Home() {
             community around science and tech. (i wish someone invited me to
             watch nobel prize ceremony when i was in high school - ref. young
             sheldon)
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p className="underline">my links:</p>
+        <ul className="list-disc pl-5">
+          <li>
+            <a href="curations.club/ashish">curations.club/ashish</a>
+          </li>
+          <li>
+            <a href="twitter.com/philotor">twitter.com/philotor</a>
+          </li>
+          <li>
+            <a href="github.com/ashish398">github.com/ashish398</a>
           </li>
         </ul>
       </div>
