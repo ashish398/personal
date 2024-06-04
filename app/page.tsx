@@ -15,7 +15,7 @@ export default function Home() {
       </div>
 
       <div>
-        <p className="underline">my idols</p>
+        <p className="underline">my idols:</p>
         <p>
           deceased - Leonardo Da Vincci, Albert Einstein, Richard Feymann,
           Gregor Mendel
@@ -25,9 +25,13 @@ export default function Home() {
           Gates
         </p>
       </div>
+      <div>
+        <p className="underline">current dream:</p>
+        <p className="italic">to be in SF</p>
+      </div>
 
       <div className="flex flex-col gap-2">
-        <p className="underline">some of things i have built -</p>
+        <p className="underline">some of things i have built:</p>
 
         <div>
           <p>
@@ -63,7 +67,7 @@ export default function Home() {
 
       <div>
         <p className="underline">
-          some big things i am excited about and want to work on
+          some big things i am excited about and want to work on:
         </p>
         <ul className="list-disc pl-5">
           <li>plastic eating enzymes</li>
@@ -73,7 +77,7 @@ export default function Home() {
       </div>
 
       <div>
-        <p className="underline">some small things i want to build</p>
+        <p className="underline">some small things i want to build:</p>
         <ul className="list-disc pl-5">
           <li>
             a science and tech shop in india - sells merchandise, posters, has a
