@@ -5,10 +5,10 @@ const Header = () => {
     <div>
       <h2 className="title_main">hi, ashish here!</h2>
       <p>
-        i graduated in 2021 from iit madras with a degree in biotechnology,
+        i graduated from IIT Madras in 2021 with a degree in biotechnology,
         specializing in computational biology. currently, i&apos;m working as a
-        founding engineer at a startup and working on an ml project in
-        biomedical sciences.
+        founding engineer at a startup and working on a ml project in biomedical
+        sciences.
       </p>
     </div>
   );

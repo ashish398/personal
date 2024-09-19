@@ -23,13 +23,13 @@ export default function Home() {
             rel="noopener noreferrer"
             className="text-blue-700 underline"
           >
-            Resume
+            resume
           </a>
         </div>
       </div>
 
       <p className="italic text-xs text-gray-400">
-        last updated: 20th Sept 2024
+        last updated: 20th sept 2024
       </p>
     </div>
   );

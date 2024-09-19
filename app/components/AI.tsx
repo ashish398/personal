@@ -21,7 +21,7 @@ const PROJECTS = [
     imageUrl: "/math.jpg",
     url: "",
     description:
-      "completed courses in data structures and algorithms, statistics, linear algebra, series and matrices, computational neuroscience to better understand and appreciate how magic happens",
+      "completed courses in data structures and algorithms, statistics, linear algebra, series and matrices, computational neuroscience to better understand and appreciate how magic happens.",
   },
 ];
 
