@@ -1,54 +1,38 @@
-import React from "react";
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "More about me — Ashish Jain",
+};
 
 const More = () => {
   return (
-    <div className="flex min-h-screen flex-col  p-8 md:p-24 pt-12 font-mono text-sm gap-4">
-      <Link href={"/"} className="underline text-blue-700">
-        {"back"}
-      </Link>
-      <h2 className="title_main">more about me</h2>
+    <main className="page article">
+      <Link href="/">← Ashish Jain</Link>
+      <h1>More about me</h1>
 
-      <div>
-        <p className="underline">my idols:</p>
-        <p>
-          deceased - Leonardo Da Vincci, Albert Einstein, Richard Feymann,
-          Gregor Mendel
-        </p>
-        <p>
-          alive - Elon Musk, Paul Graham, Mark Zuckerberg, Sam Altman, Bill
-          Gates
-        </p>
-      </div>
+      <h2>People I look up to</h2>
+      <p>
+        Leonardo da Vinci, Albert Einstein, Richard Feynman, Gregor Mendel,
+        Paul Graham, Bill Gates.
+      </p>
 
-      <div>
-        <p className="underline">current dream:</p>
-        <p className="italic">to be in SF</p>
-      </div>
+      <h2>Big problems I&apos;m excited about</h2>
+      <ul className="plain-list">
+        <li>Enzymes that break down plastic</li>
+        <li>Direct capture of air pollution</li>
+        <li>Autonomous vehicles</li>
+      </ul>
 
-      <div>
-        <p className="underline">
-          some big things i am excited about and want to work on:
-        </p>
-        <ul className="list-disc pl-5">
-          <li>plastic eating enzymes</li>
-          <li>direct pollution capture</li>
-          <li>autonomous cars</li>
-        </ul>
-      </div>
-
-      <div>
-        <p className="underline">some small things i want to build:</p>
-        <ul className="list-disc pl-5">
-          <li>
-            a science and tech shop in india - sells merchandise, posters, has a
-            community around science and tech. (i wish someone invited me to
-            watch nobel prize ceremony when i was in high school - ref. young
-            sheldon)
-          </li>
-        </ul>
-      </div>
-    </div>
+      <h2>Small things I want to build</h2>
+      <ul className="plain-list">
+        <li>
+          A science and tech shop in India that sells posters and merchandise
+          and has a community around science. (I wish someone had invited me
+          to watch the Nobel Prize ceremony when I was in high school.)
+        </li>
+      </ul>
+    </main>
   );
 };
 
