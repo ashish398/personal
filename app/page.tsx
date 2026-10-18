@@ -1,15 +1,27 @@
-import Link from "next/link";
 import Header from "./components/Header";
 import Section from "./components/Section";
 import EntryList from "./components/EntryList";
+import CurationStack from "./components/CurationStack";
 import {
   LAST_UPDATED,
-  NOTES,
-  PROBLEMS,
+  PROFILE,
   PROJECTS,
-  RESEARCH,
+  PUBLICATIONS,
+  TALKS,
   UPDATES,
 } from "./data";
+
+const LinkList = ({ links }: { links?: { label: string; href: string }[] }) =>
+  links ? (
+    <>
+      {links.map((link) => (
+        <span key={link.label}>
+          {" "}
+          [<a href={link.href}>{link.label}</a>]
+        </span>
+      ))}
+    </>
+  ) : null;
 
 export default function Home() {
   return (
@@ -31,33 +43,38 @@ export default function Home() {
         </table>
       </Section>
 
-      <Section title="Research">
-        <p className="lede">
-          I am interested in how machine learning can help us understand and
-          engineer biological systems, and in the models themselves: how
-          transformers learn, and what makes them work. Selected work below.
-        </p>
-        <EntryList entries={RESEARCH} />
+      <Section title="Publications">
+        <div className="pubs">
+          {PUBLICATIONS.map((pub) => (
+            <div key={pub.title} className="pub">
+              <div className="pub-title">{pub.title}</div>
+              <div>
+                {pub.authors.map((author, i) => (
+                  <span key={author}>
+                    {i > 0 && ", "}
+                    {author === PROFILE.name ? <strong>{author}</strong> : author}
+                  </span>
+                ))}
+              </div>
+              <div className="entry-venue">
+                {pub.venue}
+                <LinkList links={pub.links} />
+              </div>
+            </div>
+          ))}
+        </div>
       </Section>
 
-      <Section title="Things I've Built">
+      <Section title="Projects">
         <EntryList entries={PROJECTS} />
       </Section>
 
-      <Section title="Problems I Want to Work On">
+      <Section title="Talks & Service">
         <ul className="plain-list">
-          {PROBLEMS.map((p) => (
-            <li key={p}>{p}</li>
-          ))}
-        </ul>
-      </Section>
-
-      <Section title="Notes">
-        <ul className="plain-list">
-          {NOTES.map((note) => (
-            <li key={note.href}>
-              <Link href={note.href}>{note.title}</Link>
-              <span className="muted"> · {note.date}</span>
+          {TALKS.map((talk) => (
+            <li key={talk.text}>
+              {talk.text}
+              <LinkList links={talk.links} />
             </li>
           ))}
         </ul>
@@ -65,19 +82,29 @@ export default function Home() {
 
       <Section title="Beyond Work">
         <p>
-          I played for the IIT Madras football team at the Inter-IIT Sports
-          Meet and captained my hostel team to first place in the Dean&apos;s
-          Trophy. As Sponsorship &amp; PR head of the sports organizing
-          committee, I helped rebrand the institute sports fest as{" "}
-          <em>Agrata</em>. These days I backpack, keep a notebook, and someday
-          want to open a science and tech shop in India: posters, kits, and a
-          community for curious kids. <Link href="/more/">More about me</Link>.
+          I played football for IIT Madras at the Inter-IIT Sports Meet and
+          captained my hostel team. I also spent a semester on exchange at
+          Instituto Superior Técnico in Lisbon. These days I backpack, write
+          in a notebook, and build{" "}
+          <a href="https://www.curations.club">Curations</a> on the side.
         </p>
       </Section>
 
+      <Section title="From My Curations">
+        <p className="lede muted">A few talks and essays I like.</p>
+        <CurationStack />
+      </Section>
+
       <footer className="footer">
-        Last updated {LAST_UPDATED}. Layout inspired by{" "}
-        <a href="https://jonbarron.info">Jon Barron</a>.
+        <div>
+          *inspired by{" "}
+          <a href="https://en.wikipedia.org/wiki/Pale_Blue_Dot">Pale Blue Dot</a>
+          , Carl Sagan: &ldquo;That&apos;s us.&rdquo;
+        </div>
+        <div>
+          Last updated {LAST_UPDATED}. Layout inspired by{" "}
+          <a href="https://jonbarron.info">Jon Barron</a>.
+        </div>
       </footer>
     </main>
   );

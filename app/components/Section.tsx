@@ -8,7 +8,6 @@ const Section = ({
   return (
     <section className="section">
       <h2 className="section-title">
-        <span className="dot" aria-hidden />
         {title}
       </h2>
       {children}

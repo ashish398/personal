@@ -6,22 +6,23 @@ const Header = () => {
       <div className="header-text">
         <h1 className="name">{PROFILE.name}</h1>
         <p>
-          I work at the intersection of machine learning and biology. I studied
-          at <a href="https://www.iitm.ac.in">IIT Madras</a>, where I earned a
-          dual B.S. + M.S. in Biotechnology with a specialization in
-          Computational Biology, and was an INSPIRE Fellow of the Department of
-          Science and Technology, India.
+          I am a Research Engineer at{" "}
+          <a href="https://www.sarvam.ai/">Sarvam AI</a> in Bangalore. I work
+          on post-training and reinforcement learning for language models,
+          mostly rubric-based RL, synthetic data and agents that use tools over
+          long tasks. I also work on the agents that run in Sarvam&apos;s
+          products.
         </p>
         <p>
-          Currently I am a Founding Engineer at Homble, and am working on a
-          machine learning project in the biomedical sciences. Before that I
-          was a Software Developer at{" "}
-          <a href="https://hiverhq.com">Hiver</a>.
+          Before Sarvam, I spent 3 years as an engineer at early-stage
+          startups, building products and scaling them. I studied
+          Computational Biology at{" "}
+          <a href="https://www.iitm.ac.in">IIT Madras</a> (BS &amp; MS).
         </p>
         <p>
-          I like learning things by building them from first principles, from
-          training transformers from scratch to shipping products that real
-          people use.
+          I am interested in post-training, evaluation and agents, in how to
+          measure and improve models on long, multi-turn tasks, and in
+          building models with good taste.
         </p>
         <p className="links">
           {PROFILE.links.map((link, i) => (

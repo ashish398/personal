@@ -9,8 +9,7 @@ export const PROFILE = {
     { label: "CV", href: "/resume.pdf" },
     { label: "GitHub", href: "https://github.com/ashish398" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/ashish-jain-04094b14a/" },
-    { label: "Twitter", href: "https://www.twitter.com/philotor" },
-    { label: "Curations", href: "https://www.curations.club/ashish" },
+    { label: "X", href: "https://x.com/philotor" },
   ],
 };
 
@@ -18,30 +17,43 @@ export type Update = { date: string; text: string; href?: string };
 
 export const UPDATES: Update[] = [
   {
-    date: "Sep 2024",
-    text: "Implemented GPT-2 from scratch in PyTorch, following the Attention Is All You Need paper.",
-    href: "https://github.com/ashish398/gpt2",
+    date: "2026",
+    text: "UserProxyBench accepted at the AABA4ET Workshop at NeurIPS 2026.",
   },
   {
-    date: "Dec 2023",
-    text: "Launched Curations Club — #2 Product of the Day on Product Hunt.",
-    href: "https://www.curations.club",
+    date: "2026",
+    text: "Named among India's Top 18 Agentic AI Developers by Analytics India Magazine.",
+    href: "https://analyticsindiamag.com/lists/top-18-agentic-software-developers-in-india/ashish-jain",
   },
   {
-    date: "May 2023",
-    text: "Joined Homble as a Founding Engineer.",
+    date: "Nov 2024",
+    text: "Joined Sarvam AI as a Research Engineer, working on post-training and RL.",
+    href: "https://www.sarvam.ai/",
   },
   {
-    date: "Jun 2021",
-    text: "Graduated from IIT Madras (B.S. + M.S., Biotechnology) and joined Hiver as a Software Developer.",
+    date: "May 2021",
+    text: "Graduated from IIT Madras with a BS & MS in Computational Biology.",
   },
+];
+
+export type Publication = {
+  title: string;
+  authors: string[]; // the author named PROFILE.name is highlighted
+  venue: string;
+  links?: { label: string; href: string }[];
+};
+
+export const PUBLICATIONS: Publication[] = [
   {
-    date: "Feb 2019",
-    text: "Semester exchange at Instituto Superior Técnico, Lisbon.",
-  },
-  {
-    date: "2017",
-    text: "Awarded the INSPIRE Fellowship by the Department of Science and Technology, India.",
+    title:
+      "UserProxyBench: Evaluating LLM User Simulators for Agent Benchmarks and Training",
+    authors: ["Ashish Jain", "Armaan Sandhu"],
+    venue:
+      "Agentic AI Benchmarks and Applications for Enterprise Tasks Workshop (AABA4ET), NeurIPS 2026",
+    links: [
+      { label: "paper", href: "https://arxiv.org/abs/2609.38043" },
+      { label: "workshop", href: "https://sites.google.com/view/aaba4et" },
+    ],
   },
 ];
 
@@ -54,63 +66,80 @@ export type Entry = {
   description: string;
 };
 
-export const RESEARCH: Entry[] = [
-  {
-    title: "GPT-2 from Scratch",
-    href: "https://github.com/ashish398/gpt2",
-    image: "/transformer.png",
-    venue: "Independent project, 2024",
-    links: [{ label: "code", href: "https://github.com/ashish398/gpt2" }],
-    description:
-      "Built and trained a GPT-2 style language model from scratch in PyTorch, implementing the transformer from Attention Is All You Need. Followed Karpathy's Zero to Hero series.",
-  },
-  {
-    title: "Face Recognition via Singular Value Decomposition",
-    image: "/neural.jpg",
-    venue: "Computational Neuroscience, IIT Madras, 2020",
-    description:
-      "Applied SVD to grayscale face images of 10 subjects to extract representative features, then recognised faces by comparing norms against those representatives — 99.3% accuracy with a much smaller storage footprint.",
-  },
-  {
-    title: "Ingredient Label Reader",
-    image: "/science.png",
-    venue: "Homble, 2023",
-    description:
-      "An OCR and generative-AI pipeline that reads packaged-food labels in real time and flags harmful ingredients for shoppers.",
-  },
-];
-
 export const PROJECTS: Entry[] = [
   {
-    title: "Curations Club",
+    title: "Curations",
     href: "https://www.curations.club",
     image: "/curations.png",
-    venue: "Dec 2023 – present",
+    venue: "Co-creator · Dec 2024 - present",
     links: [{ label: "website", href: "https://www.curations.club" }],
     description:
-      "A place to share what you read, watch and listen to. Natural-language search over curated items uses text embeddings and a vector database. #2 Product of the Day on Product Hunt; 450+ users and 1,000+ curated items.",
+      "A place to share the books, films, music and articles you love. Search uses embeddings, metadata and people's own picks. 600+ users and 3,000+ recommendations.",
   },
   {
     title: "Poke Connect",
     image: "/poke.jpg",
-    venue: "Dec 2022 – Mar 2023 · inactive",
+    venue: "Independent project · Oct 2022 - Apr 2023",
     description:
-      "Matches people travelling to or from Bangalore airport by comparing the extra travel distance between their routes, so they can share a cab.",
+      "A cab-pooling app that matched people traveling to and from the airport based on their routes, with in-app chat. Launched to 50+ early users.",
   },
 ];
 
-export const PROBLEMS = [
-  "Enzymes that break down plastic",
-  "Direct capture of air pollution",
-  "Autonomous vehicles",
+export type Talk = { text: string; links?: { label: string; href: string }[] };
+
+export const TALKS: Talk[] = [
+  {
+    text: "Speaker on large-scale language-model pretraining, Agyeya Workshop, Indian Institute of Science",
+    links: [
+      {
+        label: "slides",
+        href: "https://docs.google.com/presentation/d/1XakSmIMal4DrNzxZ_9kzAjnaqe3db9Rn0Y92sKwCpAY/edit?usp=sharing",
+      },
+    ],
+  },
+  { text: "Reviewer, NeurIPS 2026" },
+  {
+    text: "Judge, Cerebral Valley x Google DeepMind Hackathon, Bengaluru, 2026",
+    links: [
+      { label: "event", href: "https://cerebralvalley.ai/e/google-deepmind-bangalore-hackathon" },
+    ],
+  },
 ];
 
-export const NOTES = [
+export const BLOG_POSTS = [
   {
     title: "Unstructured advice to make your backpacking trip better",
-    href: "/notes/backpacking/",
+    href: "/blog/backpacking/",
     date: "2024",
   },
 ];
+
+export const CURATIONS = {
+  title: "interesting finds of the week",
+  href: "https://www.curations.club/ashish#66000a51275991093686f7ea",
+  items: [
+    {
+      title:
+        "Hamming, Intro to The Art of Doing Science and Engineering: Learning to Learn (March 28, 1995)",
+      image:
+        "https://storage.googleapis.com/user-item-images/user-items/67ebbfef6a345d4df73c47c9/test_1747649897170.jpeg",
+    },
+    {
+      title: "Richard Feynman - The World from another point of view",
+      image:
+        "https://storage.googleapis.com/user-item-images/user-items/67e31b446a345d4df73c1cdd/test_1747649884570.jpeg",
+    },
+    {
+      title: "Hamming, Learning to Learn: You and Your Research (June 6, 1995)",
+      image:
+        "https://storage.googleapis.com/user-item-images/user-items/67b242eccacbb26cfa0c5e4c/test_1747649458920.jpeg",
+    },
+    {
+      title: "You Should Be Working On Hardware - Casey Handmer's blog",
+      image:
+        "https://storage.googleapis.com/user-item-images/user-items/6666d79d2d39fd919e200ac3/test_1747647455225.jpeg",
+    },
+  ],
+};
 
 export const LAST_UPDATED = "October 2026";
