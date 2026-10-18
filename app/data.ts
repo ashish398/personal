@@ -27,7 +27,7 @@ export const UPDATES: Update[] = [
   },
   {
     date: "Nov 2024",
-    text: "Joined Sarvam AI as a Research Engineer, working on post-training and RL.",
+    text: "Joined Sarvam AI.",
     href: "https://www.sarvam.ai/",
   },
   {
