@@ -91,7 +91,7 @@ export default function Home() {
       </Section>
 
       <Section title="From My Curations">
-        <p className="lede muted">A few talks and essays I like.</p>
+        <p className="muted">A few talks and essays I like.</p>
         <CurationStack />
       </Section>
 

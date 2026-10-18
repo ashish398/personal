@@ -8,9 +8,6 @@ const CurationStack = () => {
 
   return (
     <div className="curation">
-      <a href={CURATIONS.href} className="curation-title">
-        {CURATIONS.title}
-      </a>
       <div
         className="stack"
         data-focused={focus !== null}

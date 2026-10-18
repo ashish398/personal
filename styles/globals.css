@@ -241,9 +241,6 @@ span.entry-title {
 }
 
 /* curations card stack */
-.curation-title {
-  font-weight: 700;
-}
 .stack {
   position: relative;
   display: flex;
@@ -251,7 +248,7 @@ span.entry-title {
   justify-content: center;
   perspective: 900px;
   perspective-origin: 50% 100%;
-  padding-top: 72px;
+  padding-top: 20px;
   margin-bottom: 8px;
 }
 .stack-item {
