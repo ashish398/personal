@@ -1,71 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --ink: #222;
-  --muted: #555;
-  --link: #1772d0;
-  --rule: #ddd;
-}
-
-html {
-  font-size: 16px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 body {
-  background: #ffffff;
-  color: var(--ink);
-  font-family: Palatino, "Palatino Linotype", Palladio, "URW Palladio L",
-    "Book Antiqua", Baskerville, Georgia, serif;
-  line-height: 1.55;
+  background: rgb(255, 250, 250);
+  font-family: "Inter", sans-serif;
 }
 
-a {
-  color: var(--link);
-  text-decoration: none;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-.page {
-  max-width: 920px;
-  margin: 0 auto;
-  padding: 48px 24px 96px;
-}
-
-.name {
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: -0.02em;
-  margin: 0 0 0.4rem;
-}
-
-.section-title {
-  font-size: 1.45rem;
-  font-weight: 700;
-  margin: 2rem 0 0.75rem;
-}
-
-.news-date {
-  width: 7.5rem;
-  white-space: nowrap;
-  color: var(--muted);
-  vertical-align: top;
-  padding: 0.28rem 1rem 0.28rem 0;
-}
-
-.news-body {
-  vertical-align: top;
-  padding: 0.28rem 0;
-}
-
-.work-thumb {
-  width: 140px;
-  height: 90px;
-  object-fit: cover;
-  border-radius: 2px;
-  background: #f4f4f4;
+.title_main {
+  @apply text-lg font-semibold;
 }

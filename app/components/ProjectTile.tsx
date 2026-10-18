@@ -1,42 +1,29 @@
+import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
-export type ProjectItem = {
-  title: string;
-  imageUrl: string;
-  url?: string;
-  description: string;
-  detail?: string;
-};
-
-const ProjectTile = ({ item }: { item: ProjectItem }) => {
+const ProjectTile = ({ item }) => {
   return (
-    <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
-      <div className="flex-shrink-0">
+    <div className="flex flex-row gap-2 " key={item.title}>
+      <div className="w-[80px] h-[80px] flex-shrink-0 overflow-hidden rounded-lg">
         <Image
           src={item.imageUrl}
-          alt={item.title}
-          width={140}
-          height={90}
-          className="work-thumb"
+          alt="app_logo"
+          width={80}
+          height={80}
+          className="object-fill max-w-full max-h-full"
         />
       </div>
-      <div className="min-w-0">
-        {item.url ? (
-          <a
-            href={item.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-semibold"
-          >
-            {item.title}
-          </a>
-        ) : (
-          <span className="font-semibold">{item.title}</span>
-        )}
-        {item.detail && (
-          <div className="italic text-[var(--muted)]">{item.detail}</div>
-        )}
-        <p className="mt-1">{item.description}</p>
+      <div>
+        <Link
+          href={item.url}
+          className={item?.url ? "underline text-blue-700" : "font-semibold"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {item.title}
+        </Link>
+        <span> {item.description}</span>
       </div>
     </div>
   );

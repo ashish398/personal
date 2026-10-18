@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "ashish jain",
-  description:
-    "founding engineer working on machine learning for biomedical sciences.",
+  title: "ashish",
+  description: "my summary",
 };
 
 export default function RootLayout({
@@ -13,10 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
-        <div className="page">{children}</div>
-      </body>
+    <html lang="en" className="md:max-w-[70%] mx-auto">
+      <body>{children}</body>
     </html>
   );
 }
