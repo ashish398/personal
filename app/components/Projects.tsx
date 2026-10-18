@@ -1,4 +1,3 @@
-import React from "react";
 import ProjectTile from "./ProjectTile";
 
 const PROJECTS = [
@@ -6,29 +5,38 @@ const PROJECTS = [
     title: "curations",
     imageUrl: "/curations.png",
     url: "https://www.curations.club",
+    detail: "web app",
     description:
-      "a web app where you can share everything you're reading, listening to, and more, all in one place (kind of like what bill gates shares every summer and winter). why? because the content we consume says a lot about us and shapes who we are.",
+      "a place to share everything you're reading, listening to, and more — kind of like what bill gates shares every summer and winter. the content we consume says a lot about us, and shapes who we are.",
   },
   {
     title: "pokeconnect",
     imageUrl: "/poke.jpg",
     url: "https://www.pokeconnect.com",
+    detail: "inactive",
     description:
-      "[inactive] built an app to connect people traveling to/from the same location and developed an algorithm to match riders based on their routes and schedules. why? to help solve the problem of expensive cab fares from blr airport.",
+      "an app to connect people traveling to/from the same location, with an algorithm to match riders on routes and schedules. why? expensive cabs from blr airport.",
+  },
+  {
+    title: "gpt2",
+    imageUrl: "/transformer.png",
+    url: "https://github.com/ashish398/gpt2",
+    detail: "from scratch, pytorch",
+    description:
+      "built a gpt-2 from scratch following karpathy's series, and implemented the transformer from attention is all you need. pretty magical to watch a model generate new text.",
   },
 ];
+
 const Projects = () => {
   return (
-    <div>
-      <h2 className="text-lg font-semibold mb-4 mt-8">
-        some things i have built:{" "}
-      </h2>
-      <div className="flex flex-col gap-6">
+    <section>
+      <h2 className="section-title">selected work</h2>
+      <div className="flex flex-col gap-8">
         {PROJECTS.map((item) => (
           <ProjectTile key={item.title} item={item} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

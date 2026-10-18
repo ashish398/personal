@@ -1,54 +1,41 @@
-import React from "react";
 import Link from "next/link";
 
 const More = () => {
   return (
-    <div className="flex min-h-screen flex-col  p-8 md:p-24 pt-12 font-mono text-sm gap-4">
-      <Link href={"/"} className="underline text-blue-700">
-        {"back"}
-      </Link>
-      <h2 className="title_main">more about me</h2>
+    <article>
+      <p className="mb-6">
+        <Link href="/">home</Link>
+      </p>
+      <h1 className="name">more about me</h1>
 
-      <div>
-        <p className="underline">my idols:</p>
-        <p>
-          deceased - Leonardo Da Vincci, Albert Einstein, Richard Feymann,
-          Gregor Mendel
-        </p>
-        <p>
-          alive - Elon Musk, Paul Graham, Mark Zuckerberg, Sam Altman, Bill
-          Gates
-        </p>
-      </div>
+      <h2 className="section-title">idols</h2>
+      <p>
+        deceased — leonardo da vinci, albert einstein, richard feynman, gregor
+        mendel
+      </p>
+      <p>
+        alive — elon musk, paul graham, mark zuckerberg, sam altman, bill gates
+      </p>
 
-      <div>
-        <p className="underline">current dream:</p>
-        <p className="italic">to be in SF</p>
-      </div>
+      <h2 className="section-title">current dream</h2>
+      <p className="italic">to be in sf</p>
 
-      <div>
-        <p className="underline">
-          some big things i am excited about and want to work on:
-        </p>
-        <ul className="list-disc pl-5">
-          <li>plastic eating enzymes</li>
-          <li>direct pollution capture</li>
-          <li>autonomous cars</li>
-        </ul>
-      </div>
+      <h2 className="section-title">big things i want to work on</h2>
+      <ul className="list-disc pl-5 space-y-1">
+        <li>plastic eating enzymes</li>
+        <li>direct pollution capture</li>
+        <li>autonomous cars</li>
+      </ul>
 
-      <div>
-        <p className="underline">some small things i want to build:</p>
-        <ul className="list-disc pl-5">
-          <li>
-            a science and tech shop in india - sells merchandise, posters, has a
-            community around science and tech. (i wish someone invited me to
-            watch nobel prize ceremony when i was in high school - ref. young
-            sheldon)
-          </li>
-        </ul>
-      </div>
-    </div>
+      <h2 className="section-title">small things i want to build</h2>
+      <ul className="list-disc pl-5 space-y-1">
+        <li>
+          a science and tech shop in india — merch, posters, a community around
+          science and tech. (i wish someone invited me to watch the nobel prize
+          ceremony when i was in high school — ref. young sheldon)
+        </li>
+      </ul>
+    </article>
   );
 };
 
