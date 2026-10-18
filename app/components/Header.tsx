@@ -8,15 +8,14 @@ const Header = () => {
         <p>
           I am a Research Engineer at{" "}
           <a href="https://www.sarvam.ai/">Sarvam AI</a> in Bangalore. I work
-          on post-training and reinforcement learning for language models,
-          mostly rubric-based RL, synthetic data and agents that use tools over
-          long tasks. I also work on the agents that run in Sarvam&apos;s
-          products.
+          on reinforcement learning and evals for language models, mostly on
+          non-verifiable tasks, artefacts and long-horizon agents.
         </p>
         <p>
-          Before Sarvam, I spent 3 years as an engineer at early-stage
-          startups, building products and scaling them. I studied
-          Computational Biology at{" "}
+          Before moving into research at Sarvam, I collected most of the
+          engineering tags: mobile, frontend, backend, founding and
+          forward-deployed engineer, building products and scaling them. I
+          studied Computational Biology at{" "}
           <a href="https://www.iitm.ac.in">IIT Madras</a> (BS &amp; MS).
         </p>
         <p>

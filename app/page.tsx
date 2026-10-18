@@ -83,9 +83,10 @@ export default function Home() {
       <Section title="Beyond Work">
         <p>
           I played football for IIT Madras at the Inter-IIT Sports Meet and
-          captained my hostel team. I also spent a semester on exchange at
-          Instituto Superior Técnico in Lisbon. These days I backpack, write
-          in a notebook, and build{" "}
+          for my city. I also spent a semester on exchange at Instituto
+          Superior Técnico in Lisbon, and have traveled to more than 12
+          countries. I recently got my Open Water scuba certification.
+          These days I backpack, write in a notebook, and build{" "}
           <a href="https://www.curations.club">Curations</a> on the side.
         </p>
       </Section>
